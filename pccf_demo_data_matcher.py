@@ -15,7 +15,6 @@ def match_pccf_to_demo_data(post_code, pccf, da_data, da_spatial=None):
     if len(DAuid) > 1:
         raise Exception("More than one PC Found")
     DAuid = DAuid[0]
-    # DAuid = int(pc_to_inspect.DAuid)
     demo_data = da_data[da_data.ALT_GEO_CODE == DAuid]
     return ...
 
